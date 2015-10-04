@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="NoNonsense.FilePicker" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="10" />
+	<!-- For SD-card -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<!-- For Dropbox -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/title_activity_no_nonsense_file_picker" android:theme="@style/SampleTheme" tools:replace="android:label">
+		<!-- Sample app -->
+		<activity android:name="cham.nononsense.filepicker.sample.NoNonsenseFilePicker" android:label="@string/title_activity_no_nonsense_file_picker">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<!-- SD-card pickers -->
+		<activity android:name="cham.nononsense.filepicker.FilePickerActivity" android:label="@string/title_activity_no_nonsense_file_picker" android:theme="@style/SampleTheme">
+			<intent-filter>
+				<action android:name="android.intent.action.GET_CONTENT" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name="cham.nononsense.filepicker.sample.FilePickerActivity2" android:label="@string/title_activity_no_nonsense_file_picker" android:theme="@style/SampleThemeLight">
+			<intent-filter>
+				<action android:name="android.intent.action.GET_CONTENT" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name="cham.nononsense.filepicker.sample.MultimediaPickerActivity" android:label="@string/title_activity_no_nonsense_file_picker" android:theme="@style/SampleTheme">
+			<intent-filter>
+				<action android:name="android.intent.action.GET_CONTENT" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<activity android:name="cham.nononsense.filepicker.sample.MultimediaPickerActivity2" android:label="@string/title_activity_no_nonsense_file_picker" android:theme="@style/SampleThemeLight">
+			<intent-filter>
+				<action android:name="android.intent.action.GET_CONTENT" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		<!-- FtpPickers -->
+		<activity android:name="cham.nononsense.filepicker.sample.Ftp.FtpPickerActivity" android:label="@string/title_activity_no_nonsense_file_picker" android:theme="@style/SampleTheme" />
+		<activity android:name="cham.nononsense.filepicker.sample.Ftp.FtpPickerActivity2" android:label="@string/title_activity_no_nonsense_file_picker" android:theme="@style/SampleThemeLight" />
+		<!-- Dropbox pickers -->
+		<activity android:name="cham.nononsense.filepicker.sample.dropbox.DropboxFilePickerActivity" android:label="@string/title_activity_no_nonsense_file_picker" android:theme="@style/SampleTheme"></activity>
+		<activity android:name="cham.nononsense.filepicker.sample.dropbox.DropboxFilePickerActivity2" android:label="@string/title_activity_no_nonsense_file_picker" android:theme="@style/SampleThemeLight"></activity>
+		<!-- Dropbox authenticator -->
+		<activity android:name="com.dropbox.client2.android.AuthActivity" android:configChanges="orientation|keyboard" android:launchMode="singleTask">
+			<intent-filter>
+				<!-- Change this to be db- followed by your app key -->
+				<data android:scheme="db-csujk6zdyx4smvd" />
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+	</application>
+	<application android:label="Sample" android:icon="@drawable/ic_launcher"></application>
+</manifest>

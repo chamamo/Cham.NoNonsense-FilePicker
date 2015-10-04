@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>Cham.NoNonsense.FilePicker</id>
+		<version>1.0.0</version>
+		<title>Cham.NoNonsense.FilePicker</title>
+		<authors>Mourad Chama</authors>
+		<owners>Mourad Chama</owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Xamarin Android FilePicker</description>
+		<dependencies>
+		  <group targetFramework="MonoAndroid">
+			<dependency id="Xamarin.Android.Support.v4"  version="23.0.1.1"/>
+			<dependency id="Xamarin.Android.Support.v7.AppCompat"  version="23.0.1.1"/>
+			<dependency id="Xamarin.Android.Support.v7.RecyclerView"  version="23.0.1.1"/>
+			<dependency id="Xamarin.Android.Support.v13"  version="23.0.1.1"/>
+		  </group>     
+    </dependencies>
+	</metadata>
+	
+	<files>
+		<file src="..\Cham.NoNonsense.FilePicker\bin\Debug\Cham.NoNonsense.FilePicker.dll" target="lib\MonoAndroid\Cham.NoNonsense.FilePicker.dll" />
+		<file src="..\Cham.NoNonsense.FilePicker\bin\Debug\Cham.NoNonsense.FilePicker.pdb" target="lib\MonoAndroid\Cham.NoNonsense.FilePicker.pdb" />
+	</files>
+</package>

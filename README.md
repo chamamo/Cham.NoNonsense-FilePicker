@@ -1,6 +1,6 @@
 # Cham.NoNonsense-FilePicker
 
-This is work of [spacecowboy](https://github.com/spacecowboy)'s [NoNonsense-FilePicker](https://github.com/spacecowboy/NoNonsense-FilePicker), which has been ported to C# and added C# event handlers.
+This is work of [spacecowboy](https://github.com/spacecowboy)'s [NoNonsense-FilePicker](https://github.com/spacecowboy/NoNonsense-FilePicker), which has been ported to C#.
 
 <p>
 <img src="https://raw.githubusercontent.com/spacecowboy/NoNonsense-FilePicker/master/screenshots/Nexus6-picker-dark.png"

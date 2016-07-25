@@ -44,8 +44,10 @@ namespace Cham.NoNonsense.FilePicker
         {
             get
             {
-                return (int) Permission.Granted ==
-                       ContextCompat.CheckSelfPermission(Context, Manifest.Permission.WriteExternalStorage);
+                if ((int)Build.VERSION.SdkInt < 23)
+                    return true;
+                return (int)Permission.Granted ==
+                ContextCompat.CheckSelfPermission(Context, Manifest.Permission.WriteExternalStorage);
             }
         }
 

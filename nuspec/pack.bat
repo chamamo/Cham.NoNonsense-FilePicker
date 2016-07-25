@@ -1,2 +1,3 @@
 del *.nupkg
-nuget pack Cham.NoNonsense.FilePicker.1.0.0.nuspec
+nuget pack Cham.NoNonsense.FilePicker.nuspec
+pause
